@@ -1,3 +1,4 @@
+![Playwright Tests](https://github.com/eugenearteev-sudo/qa-playwright-automation/actions/workflows/playwright.yml/badge.svg)
 # UI Automation Project — Login (Playwright)
 
 ## 📌 Описание
