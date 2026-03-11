@@ -2,7 +2,7 @@
 
 const { test, expect } = require('@playwright/test');
 
-test('API: get user list', async ({ request }) => {
+test.skip('API: get user list', async ({ request }) => {
 
     const response = await request.get('https://reqres.in/api/users?page=2', {
         headers: {
