@@ -2,6 +2,9 @@
 
 const { test, expect } = require('@playwright/test');
 
+test.describe('HTTPBin API tests', () => {
+
+
 test('API: POST login simulation', async ({ request }) => {
 
     const response = await request.post('https://httpbin.org/post', {
@@ -69,4 +72,6 @@ test('API: negative request with empty body', async ({ request }) => {
 
     // Тело запроса пустое
     expect(body.json).toEqual({});
+});
+
 });
