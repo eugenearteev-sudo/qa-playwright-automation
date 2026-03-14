@@ -9,8 +9,11 @@ module.exports = defineConfig({
   reporter: [['html']],
 
   use: {
+    headless: true,
+
     screenshot: 'only-on-failure',
-    trace: 'on-first-retry',
+    video: 'retain-on-failure',
+    trace: 'reatin-on-failure',
   },
 
   projects: [
