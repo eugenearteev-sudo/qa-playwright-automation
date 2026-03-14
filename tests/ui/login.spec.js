@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../pages/LoginPage');
-const { loginTestCases } = require('../data/loginTestCases');
+const { LoginPage } = require('../../pages/LoginPage');
+const { loginTestCases } = require('../../data/loginTestCases');
 
 const VALID_USERNAME = 'tomsmith';
 const VALID_PASSWORD = 'SuperSecretPassword!';
