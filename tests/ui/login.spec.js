@@ -25,6 +25,7 @@ test.beforeEach(async({ page }) => {
 
 
 // ТЕСТЫ
+test.describe('Login', () => { 
 loginTestCases.forEach(({ name, username, password, expectedText, expectedOutcome }) => {
   test(`Login: ${name}`, async ({ page }) => {
     
@@ -55,7 +56,7 @@ loginTestCases.forEach(({ name, username, password, expectedText, expectedOutcom
     });
   });
 });
-
+});
 
 
 
