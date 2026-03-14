@@ -2,6 +2,7 @@
 
 const { test, expect } = require('@playwright/test');
 
+test.describe('API Tests', () => {
 test.describe('HTTPBin API tests', () => {
 
 
@@ -74,4 +75,5 @@ test('API: negative request with empty body', async ({ request }) => {
     expect(body.json).toEqual({});
 });
 
+});
 });

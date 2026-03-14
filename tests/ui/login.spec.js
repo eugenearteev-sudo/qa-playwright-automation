@@ -17,7 +17,7 @@ let loginPage; // чтобы убрать "const loginPage = new LoginPage(page)
 
 // Чтобы убрать goto - добавляем это:
 
-
+test.describe('UI Tests', () => {
 test.beforeEach(async({ page }) => {
   loginPage = new LoginPage(page);
   await loginPage.goto();
@@ -81,4 +81,4 @@ test('User can logout after successful login', async ({ page }) => {
   });
 });
 });
-
+});
