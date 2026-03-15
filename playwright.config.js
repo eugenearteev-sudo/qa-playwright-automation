@@ -10,6 +10,7 @@ module.exports = defineConfig({
 
   use: {
     headless: true,
+    ignoreHTTPSErrors: true,
 
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
