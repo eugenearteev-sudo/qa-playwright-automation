@@ -1,5 +1,4 @@
-const VALID_USERNAME = 'tomsmith';
-const VALID_PASSWORD = 'SuperSecretPassword!';
+const { VALID_USERNAME, VALID_PASSWORD } = require('./credentials');
 
 const loginTestCases = [
   {

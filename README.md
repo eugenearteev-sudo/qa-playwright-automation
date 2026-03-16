@@ -194,8 +194,10 @@ CI pipeline:
 Each push automatically runs the test suite.
 (Каждый пуш автоматически запускает набор тестов)
 
-
+```md
 ## 📂 Project Structure (Структура проекта)
+
+```text
 
 qa-playwright-automation
 │
@@ -214,7 +216,7 @@ qa-playwright-automation
 ├── package.json
 └── README.md
 
-
+``` md
 ## 👨‍💻 Author (Автор)
 
 Evgenii Arteev
@@ -226,5 +228,5 @@ GitHub: https://github.com/eugenearteev-sudo
 
 Automation practice project using Playwright.
 (Демонстрационный проект по автоматизации тестирования с использованием Playwright)
-
+```
 ---
