@@ -100,9 +100,7 @@ Contains (содержит):
 
 ---
 
-# 🌐 Cross-Browser Testing
-     
-     (Кросс-браузерное тестирование)
+# 🌐 Cross-Browser Testing (Кросс-браузерное тестирование)
 
 Test run in:
 
@@ -115,11 +113,10 @@ Test run in:
 Example run:
 
 (Пример запуска)
-
+```
 36 test passed
-
 (12 scenarios × 3 browsers)
-
+```
 ---
 
 # 📊 Reporting (Отчетность)
@@ -202,10 +199,14 @@ CI pipeline:
 
 (Конвейер непрерывной интеграции)
 ```
-1️⃣ Install dependencies (Установка необходимых библиотек)
-2️⃣ Install Playwright browsers (Загрузка бинарных файлов браузеров, необходимых для выполнения тестов )
-3️⃣ Run tests (Запуск тестов)
-4️⃣ Upload Playwright HTML report as artifact (Сохранение отчета о тестировании (HTML report) в артефакты CI)
+1️⃣ Install dependencies 
+   (Установка необходимых библиотек)
+2️⃣ Install Playwright browsers 
+   (Загрузка бинарных файлов браузеров, необходимых для выполнения тестов )
+3️⃣ Run tests 
+   (Запуск тестов)
+4️⃣ Upload Playwright HTML report as artifact 
+   (Сохранение отчета о тестировании (HTML report) в артефакты CI)
 ```
 Each push automatically runs the test suite.
 
@@ -250,5 +251,5 @@ GitHub: https://github.com/eugenearteev-sudo
 Automation practice project using Playwright.
 
 (Демонстрационный проект по автоматизации тестирования с использованием Playwright)
-```
+
 ---
