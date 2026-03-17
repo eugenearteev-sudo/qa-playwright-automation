@@ -25,6 +25,8 @@ jobs:
 
       - name: Run tests
         run: npx playwright test
+        env:
+          BASE_URL: https://the-internet.herokuapp.com
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
