@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:ui": "playwright test test/ui",
-    "test:api": "playwright test test/api",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:smoke": "playwright test -g @smoke",
     "test:report": "playwright show-report"
   },
   "keywords": [],

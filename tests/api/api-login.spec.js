@@ -2,7 +2,7 @@
 
 const { test, expect } = require('@playwright/test');
 
-test('API login example: validate response shape', async ({ request }) => {
+test('@regression @api API login example: validate response shape', async ({ request }) => {
     // Учебный пример ответа API
     const fakeResponse = {
         status: 200,

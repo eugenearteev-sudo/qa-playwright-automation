@@ -6,7 +6,7 @@ test.describe('API Tests', () => {
 test.describe('HTTPBin API tests', () => {
 
 
-test('API: POST login simulation', async ({ request }) => {
+test('@smoke @api API: POST login simulation', async ({ request }) => {
 
     const response = await request.post('https://httpbin.org/post', {
         data: {
@@ -32,7 +32,7 @@ test('API: POST login simulation', async ({ request }) => {
 });
 
 // 
-test('API: response has required headers and body structure', async ({ request }) => {
+test('@regression @api API: response has required headers and body structure', async ({ request }) => {
     const response = await request.post('https://httpbin.org/post', {
         data: {
             username: 'alex',
@@ -55,7 +55,7 @@ test('API: response has required headers and body structure', async ({ request }
 
 // Проверка negative input: проверяем, что сервер не падает, API отвечает корректно, структура ответа не ломается
 
-test('API: negative request with empty body', async ({ request }) => {
+test('@regression @api API: negative request with empty body', async ({ request }) => {
     const response = await request.post('https://httpbin.org/post', {
         data: {}
     });

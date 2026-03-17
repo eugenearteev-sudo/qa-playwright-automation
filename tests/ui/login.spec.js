@@ -27,7 +27,8 @@ test.beforeEach(async({ page }) => {
 // ТЕСТЫ
 test.describe('Login', () => { 
 loginTestCases.forEach(({ name, username, password, expectedText, expectedOutcome }) => {
-  test(`Login: ${name}`, async ({ page }) => {
+  const tags = name === 'Valid credentials' ? '@smoke @ui' : '@regression @ui';
+  test(`${tags} Login: ${name}`, async ({ page }) => {
     
     await test.step('Open login page and submit credentials', async () => {
        await loginPage.login(username, password);
@@ -62,7 +63,7 @@ loginTestCases.forEach(({ name, username, password, expectedText, expectedOutcom
 
 // Отдельный тест по сценарию "LOGOUT"
 test.describe('Logout', () => {
-test('User can logout after successful login', async ({ page }) => {
+test('@smoke @ui User can logout after successful login', async ({ page }) => {
   
 
   await test.step('Login with valid credentials', async () => {
