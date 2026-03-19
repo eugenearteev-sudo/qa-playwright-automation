@@ -35,3 +35,9 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 7
+
+      - name: Run Postman tests with Newman
+        run: |
+          npm install -g newman 
+          newman run postman/qa-api-tests.postman_collection.json \
+            -e postman/qa-environment.postman_evironment.json
