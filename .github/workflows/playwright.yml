@@ -23,10 +23,17 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run tests
+      - name: Run Playwright tests
         run: npx playwright test
         env:
           BASE_URL: https://the-internet.herokuapp.com
+
+      - name: Run Postman tests with Newman
+        run: |
+          npm install -g newman 
+          newman run postman/qa-api-tests.postman_collection.json \
+            -e postman/qa-environment.postman_environment.json \
+            --bail
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
@@ -36,9 +43,3 @@ jobs:
           path: playwright-report/
           retention-days: 7
 
-      - name: Run Postman tests with Newman
-        run: |
-          npm install -g newman 
-          newman run postman/qa-api-tests.postman_collection.json \
-            -e postman/qa-environment.postman_evironment.json
-            --bail
