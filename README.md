@@ -233,8 +233,22 @@ qa-playwright-automation
 ├── playwright.config.js
 ├── package.json
 └── README.md
+```
+
+## 📘 QA Documentation (Документация QA)
+```
+The project also includes manual QA artifacts:
+
+- `docs/bug-reports.md` — sample bug reports
+- `docs/test-cases.md` — sample test cases
+
+Проект также содержит manual QA артефакты:
+
+- `docs/bug-reports.md` — примеры bug reports
+- `docs/test-cases.md` — примеры test cases
 
 ```
+
 ## 👨‍💻 Author (Автор)
 
 Evgenii Arteev
