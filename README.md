@@ -236,7 +236,7 @@ qa-playwright-automation
 ```
 
 ## 📘 QA Documentation (Документация QA)
-```
+
 The project also includes manual QA artifacts:
 
 - `docs/bug-reports.md` — sample bug reports
@@ -247,7 +247,6 @@ The project also includes manual QA artifacts:
 - `docs/bug-reports.md` — примеры bug reports
 - `docs/test-cases.md` — примеры test cases
 
-```
 
 ## 👨‍💻 Author (Автор)
 
