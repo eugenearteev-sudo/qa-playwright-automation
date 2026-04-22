@@ -155,10 +155,10 @@ The project uses GitHub Actions.
 
 CI pipeline:
 ```
-1️ Install dependencies 
-2️⃣ Install Playwright browsers 
-3️⃣ Run tests 
-4️⃣ Upload Playwright HTML report as artifact 
+1) Install dependencies 
+2) Install Playwright browsers 
+3️) Run tests 
+4️) Upload Playwright HTML report as artifact 
 ```
 Each push automatically runs the test suite.
 
