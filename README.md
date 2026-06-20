@@ -157,8 +157,8 @@ CI pipeline:
 ```
 1) Install dependencies 
 2) Install Playwright browsers 
-3️) Run tests 
-4️) Upload Playwright HTML report as artifact 
+3) Run tests 
+4) Upload Playwright HTML report as artifact 
 ```
 Each push automatically runs the test suite.
 
